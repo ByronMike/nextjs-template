@@ -1,6 +1,6 @@
 # Boilerplate for Next JS 14, Tailwind CSS 3 and TypeScript
 
-⚡ An open-source Boilerplate for Next.js developers who want to build a high-performance, maintenable and enjoyable app : Next.js (app routing), TypeScript, ESLint, Prettier, Husky, Lint-Staged, PostCSS, Tailwind CSSs.
+⚡ An open-source Boilerplate for Next.js developers who want to build a high-performance, maintenable and enjoyable app : Next.js (app routing), TypeScript, ESLint, Prettier, Husky, Lint-Staged, PostCSS, Tailwind CSS.
 
 ## 🔥 Features
 - [Next.js](https://nextjs.org) for Static Site Generator
