@@ -1,10 +1,10 @@
 import { createPost } from '@/app/actions/demo/createPost';
-import { getPosts } from '../actions/demo/getPosts';
-import CounterComponent from '@/components/demo/Counter';
-import { cn } from '@/helpers/utils/cn';
+import { getPosts } from '@/app/actions/demo/getPosts';
+import CounterComponent from '@/components/demo/CounterDemo';
+import { cn } from '@/lib/utils';
 import styles from '@/styles/demo/CreatePostPage.module.scss';
 
-const CreatePostPage = async () => {
+const BasicDemo = async () => {
   async function handleSubmit(formData: FormData): Promise<void> {
     'use server';
 
@@ -57,4 +57,4 @@ const CreatePostPage = async () => {
   );
 };
 
-export default CreatePostPage;
+export default BasicDemo;
