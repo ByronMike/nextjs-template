@@ -1,6 +1,7 @@
 import { createPost } from '@/app/actions/demo/createPost';
 import { getPosts } from '../actions/demo/getPosts';
 import CounterComponent from '@/components/demo/Counter';
+import { cn } from '@/helpers/utils/cn';
 import styles from '@/styles/demo/CreatePostPage.module.scss';
 
 const CreatePostPage = async () => {
@@ -38,13 +39,18 @@ const CreatePostPage = async () => {
       </form>
       <h2>Get Posts</h2>
       <ul className={styles.postsList}>
-        {posts.slice(0, 10).map((post) => (
-          <li key={post.id} className={styles.postItem}>
-            <h2>{post.title}</h2>
-            <p>{post.body}</p>
-            <small>User ID: {post.userId}</small>
-          </li>
-        ))}
+        {posts.slice(0, 10).map((post, index) => {
+          return (
+            <li
+              key={post.id}
+              className={cn(index % 2 === 0 ? 'bg-gray-100' : 'bg-orange-400')}
+            >
+              <h2>{post.title}</h2>
+              <p>{post.body}</p>
+              <small>User ID: {post.userId}</small>
+            </li>
+          );
+        })}
       </ul>
       <CounterComponent />
     </div>
