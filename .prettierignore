@@ -6,5 +6,4 @@ node_modules
 next-env.d.ts
 next.config.ts
 yarn.lock
-*.css
-*.scss
+.gitkeep
