@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@page {
+  size: A4 portrait;
+  margin: 10mm 10mm 6mm 10mm;
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Inter';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Regular';
+    src: url('/fonts/inter-var-latin.woff2') format('woff2');
+  }
+
+  :root {
+    --color-deep-blue: 7 17 49;
+  }
+}
+
+@layer utilities {
+  .text-accent {
+    background-color: #ff47d7 !important; /* Tomato color */
+  }
+}
