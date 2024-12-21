@@ -47,7 +47,7 @@ const CreatePostPage = async () => {
             >
               <h2>{post.title}</h2>
               <p>{post.body}</p>
-              <small>User ID: {post.userId}</small>
+              <small className="text-accent">User ID: {post.userId}</small>
             </li>
           );
         })}
